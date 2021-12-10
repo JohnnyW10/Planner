@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planner</title>
+
+  <link href="style.css" rel="stylesheet"/> 
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><div id="title"><img src="Images/notebook.png" width="5%"  style="margin-right: 10px; float: left;" /><p style="float: left;">Organizer of the day</p></div></a>
+  </header>
+
+  <main>
+    <div id="add_activity_box">
+      <h3>Add activity to your day</h3>
+      <p>Name activity: <input id="activity_name" type="text"></p>
+      <p>Time from: <input id="time_from" type="time"> to : <input id="time_to" type="time"></p>
+      <p>Description: <textarea id="activity_description"></textarea></p>
+      <button id="adding_button">Add</button>
+    </div>
+
+    <div id="activity_view">
+      <div class="row_activity">
+        <div class="column"><h3>Name</h3></div>
+        <div class="column"><h3>Time</h3></div>
+        <div class="column"><h3>Description</h3></div>
+      </div>
+    </div>
+  </main>
+  <div id="example"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

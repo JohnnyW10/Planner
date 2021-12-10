@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: url('Images/planner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.1em;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 2px solid black;
+  background-color: rgb(250, 250, 250, 0.7);
+  -webkit-box-shadow: 0px 4px 18px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 4px 18px 2px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 18px 2px rgba(0, 0, 0, 1);
+}
+
+#title {
+  float: left;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1%;
+  cursor: pointer;
+}
+
+#title p:hover {
+  animation: bigger_font_size 1s both;
+}
+
+@keyframes  bigger_font_size {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#title p {
+  margin: 0;
+}
+
+
+header a {
+  color: black;
+  text-decoration: none;
+  float: left;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#add_activity_box {
+  width: 30%;
+  height: 50%;
+  margin: 2%;
+  border: 2px solid black;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  -moz-box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  font-size: 1.2em;
+  background-color: rgb(250, 250, 250, 0.9);
+}
+
+#add_activity_box input {
+  border-radius: 10px;
+  background-color: rgb(141, 147, 148);
+  border: 1px solid black;
+}
+
+textarea {
+  border-radius: 10px;
+  background-color: rgb(141, 147, 148);
+  border: 1px solid black;
+}
+
+#adding_button {
+  width: 30%;
+  height: 12%;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 1.2em;
+  background-color: rgb(141, 147, 148);
+  cursor: pointer;
+}
+
+#adding_button:hover {
+  animation: change_color 1s both ;
+}
+
+@keyframes change_color {
+  from {
+    background-color: rgb(141, 147, 148);
+  }
+
+  to {
+    background-color: rgb(118, 122, 122);
+  }
+}
+
+
+#activity_view {
+  width: 60%;
+  height: 90%;
+  border: 2px solid black;
+  margin: 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  -moz-box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  box-shadow: 8px 8px 0px 2px rgb(0, 0, 0);
+  background-color: rgb(250, 250, 250, 0.9);
+  overflow: hidden;
+}
+
+.row_activity {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.column {
+  width: 30%;
+  text-align: center;
+}
+
+@media (min-width: 2200px) {
+  body {
+    font-size: 1.6em;
+  }
+
+  header {
+    height: 6vh;
+  }
+  
+  #add_activity_box {
+    height: 40%;
+  }
+
+  #activity_view {
+    height: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    height: 6vh;
+  }
+  
+  #add_activity_box {
+    height: 30%;
+  }
+}
+
+
+
+@media (max-width: 780px) {
+  header {
+    height: 7vh;
+    font-size: 0.8em;
+  }
+
+  #add_activity_box {
+    width: 90%;
+    height: 60%;
+  }
+
+  #activity_view {
+    width: 90%;
+  }
+}
